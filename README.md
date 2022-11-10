@@ -9,6 +9,7 @@ As its code under development phase, no publication has been made, so it is not 
 ## Download
 	git clone https://github.com/harry-maan/gmx_qk
 ## Installation
+	cd gmx_qk
 	bash configure.sh
 ## usage
 	bash gmx_qk
