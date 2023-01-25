@@ -6,13 +6,15 @@ Simplicity and lack of expertise in complicated tool installation or compilation
 Users are assisted in producing reproducible research outcomes by a single workflow.
   
 As its code under development phase, no publication has been made, so it is not available in public doamain. (comming soon after any publication record).
+**NOTE: Make sure that internet connection is working during installation to download its all dependencies from different repositories i.e., Python modules, and build-essentials
 ## Download
-	git clone https://github.com/harry-maan/gmx_qk
+	wget --no-check-certificat 'https://drive.google.com/file/d/1iqEs7Qb-1YS6XEEc7qjj9XF5cevd1Z42/view?usp=share_link' -o gmx_qk
 ## Installation
 	cd gmx_qk
-	bash configure.sh
+	ls
+	sudo bash configure.sh
 ## usage
-	bash gmx_qk
+	bash gmx_qk or look application section 
 
 Thanks for being here.
 
