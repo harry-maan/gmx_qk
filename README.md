@@ -5,18 +5,19 @@ Through the use of **g_mmpbsa**, it acts as a bridge between the **MD engine** a
 Simplicity and lack of expertise in complicated tool installation or compilation processes, such as Gromacs command line-based utilities.
 Users are assisted in producing reproducible research outcomes by a single workflow.
   
-As its code under development phase, no publication has been made, so it is not available in public doamain. (comming soon after any publication record).
+As its under consideration for publication, so it is now available in public doamain with GPL 3.0 Licence. (It can be used free of cost, modified and distributed with no warranty).
 
 
 **NOTE: Make sure that internet connection is working during installation to download its all dependencies from different repositories i.e., Python modules, and build-essentials**
 ## Download
-	wget --no-check-certificate 'https://drive.google.com/file/d/1iqEs7Qb-1YS6XEEc7qjj9XF5cevd1Z42/view?usp=share_link' -o gmx_qk
+	git clone https://github.com/harry-maan/gmx_qk.git
 ## Installation
 	cd gmx_qk
 	ls
 	sudo bash configure.sh
-## usage
-	bash gmx_qk or look application section 
+## usage 
+	bash gmx_qk
+or or look application section
 
 Thanks for being here.
 
