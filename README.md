@@ -12,7 +12,7 @@ As its under consideration for publication, so it is now available in public doa
 ## Download
 	git clone https://github.com/harry-maan/gmx_qk.git
 ## Installation
-	cd gmx_qk
+	cd gmx_qk/gmx_qk
 	ls
 	sudo bash configure.sh
 ## usage 
