@@ -25,7 +25,7 @@ DOI: 10.1021/acs.jcim.3c00341
 or or look application section
 
 Thank you for taking the time to read this post. If you found the article useful, please consider citing it in your own work. Your support would be greatly appreciated and would help recognize the scientific contribution made in this research.
-[Support with Paytm](9587677525@paytm)
+Support using paytm 9587677525@paytm 
 
 Harvinder Singh,
 PhD scholar,
