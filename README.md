@@ -7,11 +7,12 @@ Users are assisted in producing reproducible research outcomes by a single workf
   
 It is now available in public doamain with GPL 3.0 Licence. (It can be used free of cost, modified and distributed with no warranty).
 Please cite the publication 
-Gmx_qk: An Automated Protein/Protein–Ligand Complex Simulation Workflow Bridged to MM/PBSA, Based on Gromacs and Zenity-Dependent GUI for Beginners in MD Simulation Study
 
-Harvinder Singh, Anupam Raja, Ajay Prakash, and Bikash Medhi
+**Gmx_qk: An Automated Protein/Protein–Ligand Complex Simulation Workflow Bridged to MM/PBSA, Based on Gromacs and Zenity-Dependent GUI for Beginners in MD Simulation Study**
+
+**Harvinder Singh, Anupam Raja, Ajay Prakash, and Bikash Medhi
 Journal of Chemical Information and Modeling Article ASAP
-DOI: 10.1021/acs.jcim.3c00341
+DOI: 10.1021/acs.jcim.3c00341**
 
 **NOTE: Make sure that internet connection is working during installation to download its all dependencies from different repositories i.e., Python modules, and build-essentials**
 ## Download
