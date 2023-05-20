@@ -565,11 +565,11 @@ EOF
 
   gmx editconf -f conf.gro -d 1.0 -bt triclinic -o box.gro
   gmx solvate -cp box.gro -cs spc216.gro -p topol.top -o box_sol.gro 
-  gmx grompp -f em.mdp -c box_sol.gro -p topol.top -o ION.tpr -maxwarn 11
+  gmx grompp -f em.mdp -c box_sol.gro -p topol.top -o ION.tpr -maxwarn -1
   gmx genion -s ION.tpr -p topol.top -conc 0.1 -neutral -o box_sol_ion.gro << EOF
 15
 EOF
-  gmx grompp -f em.mdp -c box_sol_ion.gro -p topol.top -o EM.tpr
+  gmx grompp -f em.mdp -c box_sol_ion.gro -p topol.top -o EM.tpr -maxwarn -1
   gmx mdrun -v -deffnm EM
   gmx make_ndx -f lig.gro -o index_lig.ndx << EOF
 0 & ! a H*
@@ -623,11 +623,11 @@ chmod 755 posre_inclusion.py
 1 | 13
 q
 EOF
-  gmx grompp -f nvt.mdp -c E*.gro -r E*.gro -p topol.top -n index.ndx -o nvt.tpr
+  gmx grompp -f nvt.mdp -c E*.gro -r E*.gro -p topol.top -n index.ndx -o nvt.tpr -maxwarn -1
   gmx mdrun -deffnm nvt
-  gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn 11
+  gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn -1
   gmx mdrun -deffnm npt
-  gmx grompp -f md.mdp -c npt.gro -r npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_10.tpr -maxwarn 11
+  gmx grompp -f md.mdp -c npt.gro -r npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_10.tpr -maxwarn -1
   source /usr/local/gromacs/bin/GMXRC
   gmx mdrun -deffnm md_10
 }
@@ -1482,11 +1482,11 @@ EOF
 
   gmx editconf -f conf.gro -d 1.0 -bt triclinic -o box.gro
   gmx solvate -cp box.gro -cs spc216.gro -p topol.top -o box_sol.gro 
-  gmx grompp -f em.mdp -c box_sol.gro -p topol.top -o ION.tpr -maxwarn 11
+  gmx grompp -f em.mdp -c box_sol.gro -p topol.top -o ION.tpr -maxwarn -1
   gmx genion -s ION.tpr -p topol.top -conc 0.1 -neutral -o box_sol_ion.gro << EOF
 13
 EOF
-  gmx grompp -f em.mdp -c box_sol_ion.gro -p topol.top -o EM.tpr
+  gmx grompp -f em.mdp -c box_sol_ion.gro -p topol.top -o EM.tpr -maxwarn -1
   gmx mdrun -v -deffnm EM
     case "${go_no_go}" in
   "Simulate Protein-Protein (P-P complex)")
@@ -1496,11 +1496,11 @@ EOF
   "P-P complex MD & Thermal MM/PBSA calculation")
   printf "splitch 1 & 2\nq\n"|gmx make_ndx -f EM.gro -o index.ndx;;
 esac
-  gmx grompp -f nvt.mdp -c E*.gro -r E*.gro -p topol.top -n index.ndx -o nvt.tpr
+  gmx grompp -f nvt.mdp -c E*.gro -r E*.gro -p topol.top -n index.ndx -o nvt.tpr -maxwarn -1
   gmx mdrun -deffnm nvt
-  gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn 11
+  gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn -1
   gmx mdrun -deffnm npt
-  gmx grompp -f md.mdp -c npt.gro -r npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_10.tpr -maxwarn 11
+  gmx grompp -f md.mdp -c npt.gro -r npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_10.tpr -maxwarn -1
   source /usr/local/gromacs/bin/GMXRC
   gmx mdrun -deffnm md_10
 }
