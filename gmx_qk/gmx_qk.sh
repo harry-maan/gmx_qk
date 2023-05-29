@@ -1055,7 +1055,7 @@ if __name__=="__main__":
 EOF
 chmod 755 stats.py
 python3 stats.py -bs -nbs 2000 -m energy_MM.xvg -p polar.xvg -a apolar.xvg
-sed '1d;2d;3d' full_energy.dat | sed '1i\,Time(Corresponding frame),E_VdW_mm(Protein),E_Elec_mm(Protein),E_Pol(Protein),E_Apol(Protein),E_VdW_mm(Ligand),E_Elec_mm(Ligand),E_Pol(Ligand),E_Apol(Ligand),E_VdW_mm(Complex),E_Elec_mm(Complex),E_Pol(Complex),E_Apol(Complex),Delta_E_mm,Delta_E_Pol,Delta_E_Apol,Delta_E_binding' |  sed "s/ \{1,\}/,/g" > full_energy_corrected.csv 
+sed '1d;2d;3d' full_energy.dat | sed '1i\,Time(Corresponding_frame),E_VdW_mm(Protein),E_Elec_mm(Protein),E_Pol(Protein),E_Apol(Protein),E_VdW_mm(Ligand),E_Elec_mm(Ligand),E_Pol(Ligand),E_Apol(Ligand),E_VdW_mm(Complex),E_Elec_mm(Complex),E_Pol(Complex),E_Apol(Complex),Delta_E_mm,Delta_E_Pol,Delta_E_Apol,Delta_E_binding' |  sed "s/ \{1,\}/,/g" > full_energy_corrected.csv 
 sed -i 's/^,//' full_energy_corrected.csv
 rm -rf full_energy.dat stats.py
 cat << EOF > csv_plot_fe.py
