@@ -14,6 +14,8 @@ Please cite the publication
 Journal of Chemical Information and Modeling Article ASAP
 DOI: 10.1021/acs.jcim.3c00341**
 
+Visit the website for more information https://harry-maan.github.io/gmx_qk.github.io/
+
 **NOTE: Make sure that internet connection is working during installation to download its all dependencies from different repositories i.e., Python modules, and build-essentials**
 ## Download
 	git clone https://github.com/harry-maan/gmx_qk.git
