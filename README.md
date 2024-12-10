@@ -1,7 +1,8 @@
 # gmx_qk
-gmx_qk is an automated bash workflow that enables users to execute simulations of **protein in water/protein-ligand complexes** with only a basic understanding of **UNIX or command-line tools**.
+The gmx_qk is an automated bash workflow that enables users to execute simulations of **protein in water/protein-ligand complexes** with only a basic understanding of **UNIX or command-line tools**.
 After receiving the input files and parameters, it starts the MD simulations in a matter of seconds, whereas a command-line-based protocol would take **20 to 30 minutes**.
 Through the use of **g_mmpbsa**, it acts as a bridge between the **MD engine** and **MM/PBSA-based binding free energy calculations** (gromacs version 2021.4)
+Additional functionality for **post-MD simulation trajectory analysis and Free Energy Landscape (FEL)** analysis has also been embedded
 Simplicity and lack of expertise in complicated tool installation or compilation processes, such as Gromacs command line-based utilities.
 Users are assisted in producing reproducible research outcomes by a single workflow.
   
@@ -25,13 +26,15 @@ Visit the website for more information https://harry-maan.github.io/gmx_qk.githu
 	sudo bash configure.sh
 ## usage 
 	bash gmx_qk
-or or look application section
+or look application section
 
 Thank you for taking the time to read this post. If you found the article useful, please consider citing it in your own work. Your support would be greatly appreciated and would help recognize the scientific contribution made in this research.
-Support using paytm **9587677525@paytm** 
+Support using paytm **9587677525@ptsbi** 
 
-Harvinder Singh,
-PhD scholar,
-Dept. of Pharmacology
-PGIMER, Chandigarh
+Dr. Harvinder Singh,
+Research Associate,
+Dept. of Translational and Regenerative Medicine
+PGIMER, Chandigarh (160012)
 harvindermaan4@gmail.com
+https://harry-maan.github.io/gmx_qk.github.io/
+https://www.linkedin.com/in/harry-maan525/
