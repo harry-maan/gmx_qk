@@ -18,13 +18,13 @@ Help()
             <h1 style='color: blue;'>Welcome to gmx_qk</h1>
             <img src="/usr/share/icons/gmx_qk" alt='gmx_qk Logo' style='display: block; margin: 20px auto; width: 200px; height: auto;'>
             <p style='font-size: 18px; text-align: justify;'>
-                The gmx_qk is a <b>Zenity, Python, Gromacs, and g_mmpbsa</b> dependent bash program. 
-                It's designed for beginners to GROMACS who wish to simulate <b>protein or protein-ligand complexes, 
-                including MM/PBSA calculations</b>. 
+                The gmx_qk is a bash program that depends on <b>Zenity, Python, GROMACS, and g_mmpbsa</b>. 
+		It is designed for beginners in GROMACS who wish to simulate <b>protein or protein-ligand complexes, including MM/PBSA calculation</b>.
+                 
                 <br><br>
                 gmx_qk is a fully automated program, efficiently compatible with GROMACS 5.0 and newer versions such as 2021.4. 
-                Informative widgets are supported by <b>Zenity (GUI)</b>. 
-                Additional functionality for <b>post-MD simulation trajectory analysis and Free Energy Landscape (FEL)</b> analysis has also been embedded.
+                It features informative widgets supported by the <b>Zenity GUI.</b>. 
+                Additionally, it incorporates functionality for <b>post-MD simulation trajectory analysis and Free Energy Landscape (FEL) </b>analysis..
                 
             </p>
             <strong>Please cite this: J. Chem. Inf. Model. 2023, 63, 9, 2603–2608</strong>
