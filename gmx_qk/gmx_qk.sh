@@ -24,7 +24,7 @@ Help()
                 <br><br>
                 gmx_qk is a fully automated program, efficiently compatible with GROMACS 5.0 and newer versions such as 2021.4. 
                 It features informative widgets supported by the <b>Zenity GUI.</b>. 
-                Additionally, it incorporates functionality for <b>post-MD simulation trajectory analysis and Free Energy Landscape (FEL) </b>analysis..
+                Additionally, it incorporates functionality for <b>post-MD simulation trajectory analysis and Free Energy Landscape (FEL) </b>analysis.
                 
             </p>
             <strong>Please cite this: J. Chem. Inf. Model. 2023, 63, 9, 2603–2608</strong>
